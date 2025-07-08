@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://myaccount.shoott.com/assets/shoott-logo-mobile-CgVVtNE4.png">
+  <title>Professional Photoshoot Pricing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+
+    * {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+    body {
+  margin: 0%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+
+    #navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border: 1px solid;
+  margin-top: 0%;
+  box-shadow: 1px 1px 1px 1px gray;
+  flex-wrap: wrap;
+  flex: auto;
+  position: sticky;
+}
+
+#logo img {
+  
+  height: 50px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding: 10px;
+}
+#links {
+  list-style: none;
+  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+#links li a {
+  text-decoration: none;
+  padding-top: 30px;
+  color: #000000;
+}
+
+#links li a:hover {
+  color: #00000099;
+}
+
+#user-icon  a {
+font-size: 20px;
+color: #4a4a4a;
+}
+#user-icon a:hover{
+  color: #c4974c;
+}
+#btn1 {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #c4974c;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  color: white;
+}
+#btn1:hover {
+  background-color: #e1b76f;
+}
+
+
+
+
+
+
+    .cards-pricing {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      
+    }
+
+    .card {
+      width: 300px;
+      border-radius: 20px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    .most-popular {
+      background-color: #eef6fb;
+    }
+
+    .best-value {
+      background-color: #fdf8ee;
+    }
+
+    .a-la-carte {
+      background-color: #eaf2ef;
+    }
+
+    .badge {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #94b9d8;
+      color: white;
+      font-weight: bold;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .best-value .badge {
+      background-color: #c59d5f;
+    }
+
+    .a-la-carte .badge {
+      background-color: #3e8774;
+    }
+
+    .image-icon {
+      width: 60px;
+      margin: 30px auto 15px;
+    }
+
+    .price {
+      font-size: 30px;
+      color: #c39a2c;
+      font-weight: bold;
+    }
+
+    .per-photo {
+      font-size: 14px;
+      color: #c39a2c;
+      margin-bottom: 15px;
+    }
+
+    .package-name {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .line {
+      height: 1px;
+      background-color: #ccc;
+      margin: 20px 0;
+    }
+
+    .details {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .strike {
+      text-decoration: line-through;
+      color: #777;
+    }
+
+    .sale {
+      color: #c45252;
+      margin-top: 10px;
+    }
+
+    .sale-price {
+      font-style: italic;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .note {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 12px;
+      color: #555;
+      font-style: italic;
+    }
+
+
+
+
+
+
+    .about-us {
+        height: 400px;
+        background-color: #212121;
+        margin-top: 10px;
+        display: flex;
+        justify-content:space-evenly;
+      }
+
+      #one-footer {
+        color: #fff;
+        width: 300px;
+        margin-top: 30px;
+        text-align: left;
+      }
+
+      #one-footer ul, #two-footer ul{
+        list-style: none;
+
+      }
+
+      #one-footer ul li a{
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+      }
+
+      #two-footer {
+        color: #fff;
+        margin-right: 40px;
+        width: 300px;
+        margin-top: 30px;
+        text-align: left;
+      }
+      #two-footer a {
+        color: #fff;
+        text-decoration: none;
+       
+      }
+
+      #three-footer {
+        color: #fff;
+        margin-right: 20px;
+        width: 300px;
+        margin-top: 30px;
+        text-align: left;
+        width: 550px;
+      }
+
+      #bottom {
+        margin: 0;
+        align-items: center;
+        color: #fff;
+        background-color: #212121;
+        display: flex;
+        box-sizing: border-box;
+       
+      }
+
+      #bottom p{
+        margin: auto;
+        align-items: center;
+        padding-bottom: 40px;
+      }
+
+      #three-footer img{
+        width: 60px;
+        color: white;
+      } 
+      .heading{
+        display: flex;
+        align-items: center;
+       height: 100px;
+       padding-top: 80px;
+      
+       justify-content: center;
+        font-family: "freightBigProFont", "freightBigProFont Fallback";
+      }
+      .heading h3{
+        font-weight: 200;
+        font-size: 40px;
+         font-family: "freightBigProFont", "freightBigProFont Fallback";
+         letter-spacing: 1px;
+      
+      }
+
+      .para{
+        display: flex;
+        align-items: center;
+       height: 100px;
+      
+       justify-content: center;
+        font-family: "freightBigProFont", "freightBigProFont Fallback";
+      }
+  </style>
+  
+
+</head>
+
+<body>
+
+   
+  <header>
+    <nav id="navbar">
+      <div id="logo">
+        <a href="index.html"><img src="img\nav logo\1.webp" alt="logo" /></a>
+      </div>
+      <ul id="links">
+        <li><a href="index.html">How It Work</a></li>
+        <li><a href="">Photo Pricing</a></li>
+        <li><a href="">The Shoot Experience</a></li>
+        <li><a href="">Our Services</a></li>
+        <li><a href="">Resources</a></li>
+      </ul>
+      </div>
+      <p id="user-icon"> <a href="login.html"><i class="fa-solid fa-user"></i></a> </p>
+      <a href="booknow.html"><button id="btn1">Book Now</button></a>
+    </div>
+      
+    </nav>
+  </header>
+
+   <div class="heading">
+        <h3>Photo Pricing</h3> <br>
+    </div>
+    <div class="para">
+        <p>Pay only for the pics you ❤️</p>
+    </div>
+
+   <div class="cards-pricing">
+
+    <!-- Card 1 -->
+    <div class="card most-popular">
+      <div class="badge">MOST POPULAR</div>
+      <img class="image-icon" src="https://www.shoott.com/_next/image?url=%2Fimages%2FlandingPage%2FphotoPricing%2Fgroup.png&w=256&q=75" alt="photos stack" />
+      <div class="price">$18</div>
+      <div class="per-photo">per photo</div>
+      <div class="package-name">Basic Package</div>
+      <div class="line"></div>
+      <div class="details">
+        $180 includes:<br>
+        10 digital photos<br>
+        $20 retouching credits
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card best-value">
+      <div class="badge">BEST VALUE</div>
+      <img class="image-icon" src="https://www.shoott.com/_next/image?url=%2Fimages%2FlandingPage%2FphotoPricing%2Ffull-gallery.png&w=256&q=75" alt="photos in box" />
+      <div class="price">$3–$7</div>
+      <div class="per-photo">per photo</div>
+      <div class="package-name">Full Gallery Package</div>
+      <div class="line"></div>
+      <div class="details">
+        $298 includes:<br>
+        40+ digital photos<br>
+        $40 retouching credits
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card a-la-carte">
+      <div class="badge">BASIC</div>
+      <img class="image-icon" src="https://www.shoott.com/_next/image?url=%2Fimages%2FlandingPage%2FphotoPricing%2Fsingle.png&w=128&q=75" alt="individual photo" />
+      <div class="details">
+        Individual photos also<br>
+        available for purchase at<br>
+        <span class="strike">$30 per photo</span>
+        <div class="sale">Summer sale</div>
+        <div class="sale-price">$25 per photo</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="note">
+    * Your purchased Shoott photos may only be used for non-commercial purposes.
+  </div>
+
+
+  <footer>
+
+   <div class="about-us">
+        <div id="one-footer">
+          
+          
+          <ul>
+            <h3 style="color: #9a9a9a;">HELP</h3>
+            <li><a href="index.html">How it works</a></li><br>
+            <li><a href="photopricing.html">Pricing</a></li><br>
+            <li><a href="">FAQs</a></li><br>
+            <li><a href="">Contact</a></li><br>
+            <li><a href="">Gift Card Balance</a></li><br>
+            <li><a href="login.html">My Account</a></li><br>
+          </ul>
+        </div>
+
+        <div id="two-footer">
+          
+          <ul>
+            <h3 style="color: #9a9a9a;">COMPANY</h3>
+            <li><a href="">Gift & Offers</a></li><br>
+            <li><a href="">Affiliate Program</a></li><br>
+            <li><a href="">Careers</a></li><br>
+            <li><a href="">About Us</a></li><br>
+            <li><a href="">Partnership</a></li><br>
+            <li><a href="">Press</a></li><br>
+            <li><a href="">Policies</a></li><br>
+            <li><a href="">Blog</a></li><br>
+          </ul>
+        </div>
+
+        <div id="three-footer">
+          <h3 style="color: #9a9a9a;">Contact</h3>
+
+          <div id="img">
+       <a href="" style="color: white;"><i class="fa-brands fa-facebook"></i></a> 
+       <a href="" style="color: white;"> <i class="fa-brands fa-instagram"></i></a>
+       <a href="" style="color: white;"> <i class="fa-brands fa-linkedin"></i></a>
+       <a href="" style="color: white;"> <i class="fa-brands fa-pinterest"></i></a>
+       <a href="" style="color: white;"> <i class="fa-brands fa-tiktok"></i></a>
+        <a href="" style="color: white;"> <i class="fa-brands fa-snapchat"></i></a>
+      </div>
+
+       <p>Shoott is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone, and applying the relevant accessibility standards.</p>
+
+       <img src="https://www.shoott.com/_next/image?url=%2Fimages%2FlandingPage%2Ffooter%2FFFC.png&w=128&q=75" alt="" height="60px">
+       <img src="https://www.shoott.com/_next/image?url=%2Fimages%2FlandingPage%2Ffooter%2FLGBTQ.png&w=128&q=75" alt="" height="60px">
+       <img src="https://www.shoott.com/_next/image?url=%2Fimages%2FlandingPage%2Ffooter%2Fpay-it-forward-seal.png&w=256&q=75" alt="" height="60px">
+
+          
+        </div> 
+    </div>
+   
+    
+        <div class="row2">
+            <div id="bottom">
+                <p> &copy; 2025 YourWebsite. All right reserved.</p>
+            </div>
+        </div>
+</footer>
+
+</body>
+
+</html>
+
+</body>
+</html>

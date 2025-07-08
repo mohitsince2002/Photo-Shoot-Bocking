@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://myaccount.shoott.com/assets/shoott-logo-mobile-CgVVtNE4.png">
+  <title>Book Now</title>
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+    .book-now-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .book-now-container h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input, select, textarea {
+      margin-top: 8px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .book-button {
+      margin-top: 30px;
+      padding: 12px;
+      font-size: 18px;
+      background-color: #c4974c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .book-button:hover {
+      background-color: #e1b76f;
+    }
+
+    @media (max-width: 600px) {
+      .book-now-container {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="book-now-container" id="booknowform">
+    <h2>📸 Book Your Photo Shoot</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Preferred Time</label>
+      <input type="time" id="time" required>
+
+      <label for="location">Location</label>
+      <input type="text" id="location" placeholder="City / Park / Studio..." required>
+
+      <label for="package">Select Package</label>
+      <select id="package" required>
+        <option value="">-- Choose Package --</option>
+        <option value="basic">Basic Package ($18/photo)</option>
+        <option value="gallery">Full Gallery Package ($3–$7/photo)</option>
+        <option value="a-la-carte">Basic ($25/photo)</option>
+      </select>
+
+      <label for="notes">Additional Notes (optional)</label>
+      <textarea id="notes" rows="4" placeholder="Any special requests?"></textarea>
+
+      <button type="submit" class="book-button">📅 Book Now</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

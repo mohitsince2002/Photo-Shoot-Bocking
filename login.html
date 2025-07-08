@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://myaccount.shoott.com/assets/shoott-logo-mobile-CgVVtNE4.png">
+    <title>Shoot | My Account</title>
+</head>
+<style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .login-container {
+      max-width: 400px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 10px 0 20px;
+    }
+
+    .login-container p {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .login-container p a {
+      color: purple;
+      text-decoration: none;
+    }
+
+    .google-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px 0;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .google-btn img {
+      height: 18px;
+      margin-right: 8px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 15px 0;
+    }
+
+    .social-icons i {
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 20px 0;
+      justify-content: center;
+      margin: auto;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .divider:not(:empty)::before {
+      margin-right: .5em;
+    }
+
+    .divider:not(:empty)::after {
+      margin-left: .5em;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .forgot {
+      text-align: left;
+      font-size: 13px;
+      margin: 5px 0;
+    }
+
+    .forgot a {
+      color: purple;
+      text-decoration: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #c4974c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover{
+      background: #e1b76f;
+    }
+
+    .bottom-links {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 15px;
+    }
+
+    .bottom-links a {
+      color: purple;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+   <header>
+      <nav id="navbar">
+        <div id="logo">
+          <a href="index.html"><img src="img\nav logo\1.webp" alt="logo" /></a>
+        </div>
+        <ul id="links">
+          <li><a href="index.html">How To Work</a></li>
+          <li><a href="photopricing.html">Photo Pricing</a></li>
+          <li><a href="">The Shoot Experience</a></li>
+          <li><a href="">Our Services</a></li>
+          <li><a href="">Resources</a></li>
+        </ul></div>
+        
+          <p id="user-icon" > <a href="login.html"><i class="fa-solid fa-user"></i></a> </p>
+         <a href="booknow.html"> <button id="btn1">Book Now</button></a></div>
+      </nav>
+    </header>
+    
+
+  <div class="login-container">
+    <div class="logo">
+      <img src="img\login img\shoott-logo-mobile-CgVVtNE4.png" alt="Logo">
+    </div>
+    <h2>Log in</h2>
+    <p>New user? <a href="creataccount.html">Register Now</a></p>
+
+    <div class="google-btn">
+      <img src="https://img.icons8.com/color/16/google-logo.png"/>
+      Continue with Google
+    </div>
+
+    <!-- <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-github"></i>
+      <i class="fas fa-globe"></i>
+    </div> -->
+
+    <div class="divider">or</div>
+
+    <input type="text" placeholder="Username or email">
+    <input type="password" placeholder="Enter Password">
+    
+    <div class="forgot"><a href="#">Forgot Password?</a></div>
+
+    <button>Sign In</button>
+
+    <div class="bottom-links">
+      By creating this account, you agree to our
+      <a href="#">Privacy Policy</a> & 
+      <a href="#">Cookie Policy</a>.
+    </div>
+  </div>
+
+
+
+</body>
+</html>
